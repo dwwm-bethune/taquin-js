@@ -1,0 +1,25 @@
+#game {
+    width: 400px;
+    height: 400px;
+    background-color: #cbd5e0;
+    margin: auto;
+    position: relative;
+}
+
+.bloc {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #2d3748;
+    border: 1px solid #1a202c;
+    color: #cbd5e0;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.bloc-empty {
+    /* background-color: transparent; */
+}
