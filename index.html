@@ -8,23 +8,34 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div id="game">
-        <div id="bloc-1" class="bloc" style="top: 0; left: 0">1</div>
-        <div id="bloc-2" class="bloc" style="top: 0; left: 100px">2</div>
-        <div id="bloc-3" class="bloc" style="top: 0; left: 200px">3</div>
-        <div id="bloc-4" class="bloc" style="top: 0; left: 300px">4</div>
-        <div id="bloc-5" class="bloc" style="top: 100px; left: 0">5</div>
-        <div id="bloc-6" class="bloc" style="top: 100px; left: 100px">6</div>
-        <div id="bloc-7" class="bloc" style="top: 100px; left: 200px">7</div>
-        <div id="bloc-8" class="bloc" style="top: 100px; left: 300px">8</div>
-        <div id="bloc-9" class="bloc" style="top: 200px; left: 0">9</div>
-        <div id="bloc-10" class="bloc" style="top: 200px; left: 100px">10</div>
-        <div id="bloc-11" class="bloc" style="top: 200px; left: 200px">11</div>
-        <div id="bloc-12" class="bloc" style="top: 200px; left: 300px">12</div>
-        <div id="bloc-13" class="bloc" style="top: 300px; left: 0">13</div>
-        <div id="bloc-14" class="bloc" style="top: 300px; left: 100px">14</div>
-        <div id="bloc-15" class="bloc" style="top: 300px; left: 200px">15</div>
-        <div id="bloc-16" class="bloc bloc-empty" style="top: 300px; left: 300px">Blanc</div>
+    <div class="container">
+        <span id="shots" class="meta">Coups <strong>0</strong></span>
+        <span id="stopwatch" class="meta">Temps <strong>0</strong></span>
+        <br />
+
+        <button id="start">Démarrer</button>
+        <br /><br />
+
+        <div id="game">
+            <div id="bloc-1" class="bloc bloc-1" style="top: 0; left: 0; background-position: 0px 0px;">1</div>
+            <div id="bloc-2" class="bloc bloc-2" style="top: 0; left: 100px; background-position: -100px 0px;">2</div>
+            <div id="bloc-3" class="bloc bloc-3" style="top: 0; left: 200px; background-position: -200px 0px;">3</div>
+            <div id="bloc-4" class="bloc bloc-4" style="top: 0; left: 300px; background-position: -300px 0px;">4</div>
+            <div id="bloc-5" class="bloc bloc-5" style="top: 100px; left: 0; background-position: 0px -100px;">5</div>
+            <div id="bloc-6" class="bloc bloc-6" style="top: 100px; left: 100px; background-position: -100px -100px;">6</div>
+            <div id="bloc-7" class="bloc bloc-7" style="top: 100px; left: 200px; background-position: -200px -100px;">7</div>
+            <div id="bloc-8" class="bloc bloc-8" style="top: 100px; left: 300px; background-position: -300px -100px;">8</div>
+            <div id="bloc-9" class="bloc bloc-9" style="top: 200px; left: 0; background-position: 0px -200px;">9</div>
+            <div id="bloc-10" class="bloc bloc-10" style="top: 200px; left: 100px; background-position: -100px -200px;">10</div>
+            <div id="bloc-11" class="bloc bloc-11" style="top: 200px; left: 200px; background-position: -200px -200px;">11</div>
+            <div id="bloc-12" class="bloc bloc-12" style="top: 200px; left: 300px; background-position: -300px -200px;">12</div>
+            <div id="bloc-13" class="bloc bloc-13" style="top: 300px; left: 0; background-position: 0px -300px;">13</div>
+            <div id="bloc-14" class="bloc bloc-14" style="top: 300px; left: 100px; background-position: -100px -300px;">14</div>
+            <div id="bloc-15" class="bloc bloc-15" style="top: 300px; left: 200px; background-position: -200px -300px;">15</div>
+            <div id="bloc-16" class="bloc bloc-empty bloc-16" style="top: 300px; left: 300px;">Blanc</div>
+        </div>
+
+        <h2 id="win" style="display: none">Vous avez gagné !</h2>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
